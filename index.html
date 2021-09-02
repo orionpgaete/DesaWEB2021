@@ -5,20 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera WEB</title>
+    <style type="text/css" media="screen">
+        body{
+            background: #e2564e;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #9a1200;
+            color: #fff;
+            text-align: center;
+            height: 100px;
+        }
+        h1{
+            margin:0;
+            padding: 0;            
+        }
+        #main_izquierda,#main_derecha{
+            text-align:left;
+        }
+        #main_izquierda{
+            float:left;
+            width: 50%;
+            background: red;
+        }
+        #main_derecha{
+            float:right;
+            width: 50%;
+            background: blue;
+        }
+        footer{
+            background: #020303;
+            color: white;
+            position:absolute;
+            width: 100%;
+            bottom:0;
+        }
+        #vinculo{
+            /** A los vinculos se les debe aplicar estilos
+            directamente, no heredan estilos de los padres*/
+            color:white;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola mundo desde html</h1>
-    <h2>Este es un hola mundo mas pequeño</h2>
-    <h4>Es mas pequeño que el h2</h4>
-    <h6>Es es chiquuuuiiiiiitiiiiittttttoooooo</h6>
+    <header>
+           <h1>INACAP Sede Temuco - IX Region </h1>
+    </header>
+    <main>
+        <div id="main_izquierda">
+            <h1>Esto esta a la izquierda</h1>
+        </div>
+        <div id="main_derecha">
+            <h1>Esto esta a la derecha</h1>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservado para mi</p>
+        <p>Copyright Inacap 2021</p>
+        <a id="vinculo" href="http://www.inacap.cl">Ir a Inacap</a>    
+    </footer>
 
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam esse, voluptatem pariatur animi, eos fuga placeat, 
-        obcaecati distinctio architecto cum ipsum dolorum nisi deleniti. Corporis temporibus quae nulla sint quam.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maxime possimus sequi voluptatem cum deleniti vel quo,
-        voluptatibus aliquam adipisci, officia distinctio nulla ducimus harum incidunt pariatur recusandae quisquam officiis?
-    </p>
 </body>
 </html>
