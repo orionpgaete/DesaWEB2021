@@ -1,0 +1,75 @@
+body{
+    background: #e2564e;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica";
+}
+header{
+    background: #9a1200;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    padding-top:20px;
+}
+h1{
+    margin:0;
+    padding: 0;            
+}
+main{
+    margin-top:40px;
+}
+#main_izquierda,#main_derecha{
+    text-align:left;
+}
+#main_izquierda{
+    float:left;
+    width: 50%;
+
+}
+#main_derecha{
+    float:right;
+    width: 50%;
+
+}
+footer{
+    background: #020303;
+    color: white;
+    position:absolute;
+    width: 100%;
+    bottom:0;
+}
+#vinculo{
+    /** A los vinculos se les debe aplicar estilos
+    directamente, no heredan estilos de los padres*/
+    color:white;
+    
+}
+#lista{
+    font-size: 25px;
+    font-family: "Comic Sans";
+
+}
+
+.bloque_centrado{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cont_tabla{
+    margin-top: 20px;
+}
+
+.header_tabla{
+    background: black;
+    color: white;
+    font-size: 25px;
+    font-family: "Comic Sans";
+}
+
+.body_tabla{
+    font-size: 20px;
+    font-family: "Georgia";
+}
+
+
