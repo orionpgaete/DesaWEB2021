@@ -153,3 +153,33 @@ h1, h2, h3{
     align-items: flex-end;
 }
 
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.servicio h3{
+
+}
+
+.servicio p{
+    line-height: 2;
+}
+
+.servicio .iconos{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
