@@ -13,7 +13,10 @@ body{
     font-size:18px;
     font-weight: 400;
     color: #3f3f3f;
-
 }
 
+.servicio-fila{
+    width: 100% !important;
+    text-align: center;
+}
 
