@@ -4,4 +4,5 @@
     require_once("controlador/Libros.php");
     $db = new conexion();
  */
+$control = new Control();
 ?>

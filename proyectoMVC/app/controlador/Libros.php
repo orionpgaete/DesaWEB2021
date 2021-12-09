@@ -1,13 +1,10 @@
 <?php
-    //llamar al modelo
-    require_once("modelos/libro.php");
 
-    $libro = new Libros();
+class Libros{
 
-    $datos = $libro->getLibros();
-   // var_dump($datos);
+    function __construct(){
 
-    //llamar a la vista
-
-    require_once("vistas/libro.php");
+        print "Hola desde el controlador de Libros.php";
+    }
+}
 ?>
