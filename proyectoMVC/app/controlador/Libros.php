@@ -1,10 +1,17 @@
 <?php
 
-class Libros{
+class Libros extends Controlador{
+
+    private $modelo;
 
     function __construct(){
+        $this->modelo = $this->modelo("LibrosModelo");     
+    }
 
-        print "Hola desde el controlador de Libros.php";
+    public function index(){
+        $data = $this->modelo->getLibros();
+        //llamamos a la vista
+        $this->vista("LibrosVista", $data);
     }
 }
 ?>

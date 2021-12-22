@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,9 @@
     <h2>Lista de Libros Biblioteca</h2>
     <ul>
         <?php
-            foreach ($datos as $valor){
-                print "<li>".$valor["id"]." ".$valor["titulo"]."</li>";
-            } 
+            for ($i=0; $i < count($data); $i++) { 
+                print "<li>".$data[$i]["titulo"]."</li>";
+            }
         ?>
     </ul>
     

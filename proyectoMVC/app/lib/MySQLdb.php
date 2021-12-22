@@ -11,7 +11,7 @@
 
      public function __construct()
      {
-         $conn = mysqli_connect($this->host, $this->usuario, $this->clave, $this->db);
+         $this->conn = mysqli_connect($this->host, $this->usuario, $this->clave, $this->db);
          if (mysqli_connect_errno())
             {
                 printf("Error en la conexion con la base de datos: %s",
@@ -20,18 +20,26 @@
             }
         else
             {
-                print "Conexion exitosa";    
+                //print "Conexion exitosa";    
             }
 
-        if(!mysqli_set_charset($conn, "utf8"))
+        if(!mysqli_set_charset($this->conn, "utf8"))
         {
-            printf("Error en la conversion de caracteres: %s", mysqli_error($conn));
+            printf("Error en la conversion de caracteres: %s", mysqli_error($this->conn));
             exit();
         }
         else
         {
-            print "El conjunto de caracteres es: ".mysqli_character_set_name($conn);
+        //    print "El conjunto de caracteres es: ".mysqli_character_set_name($this->conn);
         }
      }
+
+     public function querySelect($sql){
+        $data = array();
+        $r = $this->conn->query($sql);
+        while($row= mysqli_fetch_assoc($r))
+          array_push($data,$row);
+        return $data;
+      }
  }
 ?>
