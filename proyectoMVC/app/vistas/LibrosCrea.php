@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Lista de Libros Biblioteca</h2>
+    <h2>Agregar un nuevo libro</h2>
 
     <table border='1'>
         <thead>
@@ -34,7 +34,7 @@
         </tbody>
         
     </table>
-    <a href='<?php print RUTA_APP."libros/crear/";?>'>Registrar un nuevo Libro</a>
+    <a href='<?php print RUTA_APP."libros/"; ?>'>Regresar</a>
     
 </body>
 </html>
