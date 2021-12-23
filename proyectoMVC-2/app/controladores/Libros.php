@@ -12,7 +12,7 @@ class Libros extends Controlador{
         $data = $this->modelo->getLibros();
 
         //llamamos a la vista
-        $this->vista("LibrosVista", $data);
+        $this->vista("LibrosVista",$data);
     }
 
     public function modificar($id){

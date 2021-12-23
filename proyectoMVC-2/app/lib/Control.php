@@ -8,11 +8,11 @@
 
         function __construct(){
             $url = $this->separarURL();
-            if ($url!="" && file_exists("../app/controlador/".ucwords($url[0]).".php")){
+            if ($url!="" && file_exists("../app/controladores/".ucwords($url[0]).".php")){
                 $this->controlador = ucwords($url[0]);
                 unset($url[0]);
             }
-            require_once("../app/controlador/".ucwords($this->controlador).".php");
+            require_once("../app/controladores/".ucwords($this->controlador).".php");
             $this->controlador = new $this->controlador;
 
                 /*** Inciamos el método ***/
